@@ -59,7 +59,7 @@ export default function Home() {
                 <span>GitHub</span>
               </a>
               <a
-                href="https://storage.opentasktracker.org/Open%20Task%20Tracker-0.0.1-arm64.dmg"
+                href="https://storage.opentasktracker.org/Open%20Task%20Tracker-0.0.1-arm64.dmg.zip"
                 className="inline-flex items-center gap-2 rounded-full border-2 border-black bg-white text-black px-4 py-2 font-semibold shadow-[6px_6px_0_0_#000] hover:-translate-y-0.5 active:translate-y-0 transition-transform"
               >
                 <svg
