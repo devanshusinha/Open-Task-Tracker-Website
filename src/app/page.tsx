@@ -1,3 +1,5 @@
+import CopyableCode from "@/components/CopyableCode";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black">
@@ -59,7 +61,7 @@ export default function Home() {
                 <span>GitHub</span>
               </a>
               <a
-                href="https://storage.opentasktracker.org/Open%20Task%20Tracker-0.0.1-arm64-mac.zip"
+                href="https://github.com/devanshusinha/open-task-tracker/archive/refs/heads/main.zip"
                 className="inline-flex items-center gap-2 rounded-full border-2 border-black bg-white text-black px-4 py-2 font-semibold shadow-[6px_6px_0_0_#000] hover:-translate-y-0.5 active:translate-y-0 transition-transform"
               >
                 <svg
@@ -70,8 +72,58 @@ export default function Home() {
                 >
                   <path d="M16.365 1.43a5.89 5.89 0 0 0-3.953 2.137c-.91 1.099-1.36 2.455-1.271 3.788 1.429.057 2.964-.79 3.914-1.97.95-1.182 1.426-2.6 1.31-3.955ZM18.83 12.8c-.028-2.913 2.38-4.318 2.49-4.387-1.36-1.986-3.47-2.26-4.218-2.287-1.796-.182-3.502 1.04-4.414 1.04-.923 0-2.318-1.02-3.808-.991-1.962.03-3.777 1.147-4.785 2.9-2.066 3.581-.527 8.85 1.484 11.744.984 1.418 2.134 3.01 3.66 2.954 1.483-.058 2.042-.956 3.833-.956 1.78 0 2.31.956 3.82.928 1.58-.03 2.58-1.447 3.558-2.872 1.16-1.699 1.64-3.35 1.66-3.439-.037-.014-3.18-1.213-3.282-4.634Z" />
                 </svg>
-                <span>Download for Mac (Apple Silicon)</span>
+                <span>Download Zip</span>
               </a>
+            </div>
+            <div className="w-full">
+              <div className="rounded-2xl border-2 border-black bg-white p-6 shadow-[10px_10px_0_0_#000]">
+                <h2 className="text-xl sm:text-2xl font-extrabold mb-4">
+                  Get started in 3 steps
+                </h2>
+                <ol className="grid gap-4 sm:grid-cols-3">
+                  <li className="rounded-xl border-2 border-black bg-white p-4">
+                    <div className="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 border-black bg-black text-white font-bold mb-3">
+                      1
+                    </div>
+                    <h3 className="font-bold mb-2">Download and unzip</h3>
+                    <p className="text-sm text-neutral-700">
+                      <a
+                        href="https://github.com/devanshusinha/open-task-tracker/archive/refs/heads/main.zip"
+                        className="underline font-semibold"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Download the ZIP
+                      </a>
+                      , then unzip it.
+                    </p>
+                  </li>
+                  <li className="rounded-xl border-2 border-black bg-white p-4">
+                    <div className="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 border-black bg-black text-white font-bold mb-3">
+                      2
+                    </div>
+                    <h3 className="font-bold mb-2">
+                      CD into the app with the terminal and run the command
+                      below
+                    </h3>
+                    <CopyableCode command="chmod +x scripts/build-macos.sh" />
+                  </li>
+                  <li className="rounded-xl border-2 border-black bg-white p-4">
+                    <div className="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 border-black bg-black text-white font-bold mb-3">
+                      3
+                    </div>
+                    <h3 className="font-bold mb-2">
+                      Then run the command below
+                    </h3>
+                    <CopyableCode command="bash scripts/build-macos.sh" />
+                  </li>
+                </ol>
+                <div className="mt-6 rounded-xl border-2 border-black bg-yellow-300 p-4 shadow-[6px_6px_0_0_#000] text-center">
+                  <span className="text-lg font-extrabold">
+                    ⚠️ It can take up to 10 minutes to build the project
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
           <div className="rounded-2xl border-2 border-black overflow-hidden shadow-[10px_10px_0_0_#000]">
